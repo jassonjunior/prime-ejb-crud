@@ -3,8 +3,10 @@ package br.com.yaw.prime.service;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 
 import br.com.yaw.prime.model.Mercadoria;
+import br.com.yaw.prime.model.Usuario;
 
 /**
  * Componente EJB que define as operações de negócio da entidade <code>Mercadoria</code>.
@@ -30,5 +32,6 @@ public class MercadoriaService extends AbstractPersistence<Mercadoria, Long>{
 	public MercadoriaService() {
 		super(Mercadoria.class);
 	}
+	
 
 }

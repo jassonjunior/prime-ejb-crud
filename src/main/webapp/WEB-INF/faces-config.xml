@@ -13,6 +13,7 @@
 			<base-name>messages_labels</base-name>
 			<var>msg</var>
 		</resource-bundle>
+	
 	</application>
 
 	<navigation-rule>
@@ -36,4 +37,9 @@
 			<value>sobre.build</value>
 		</list-entries>
 	</managed-bean>
+	
+	<lifecycle>
+		<phase-listener>br.com.yaw.prime.util.Autorizador</phase-listener>
+	</lifecycle>
+	
 </faces-config>
